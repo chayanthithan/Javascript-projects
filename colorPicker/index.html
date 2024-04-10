@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="main-div">
+        <div class="sub-div">
+             <div class="heading">
+                <h2>Color changer</h2>
+             </div>
+            <div class="color-div">
+                <button class="button"  id="yellow">yellow</button>
+                <button class="button" id="black">black</button>
+                <button class="button" id="blue">blue</button>
+                <button class="button" id="red">red</button>
+                <button class="button" id="green">green</button>
+                <button class="button" id="orange">orange</button>
+                <button class="button" id="default">default</button>
+            </div>
+        </div>
+      
+       
+    </div>
+    <script>
+        const btn=document.querySelectorAll('.button');
+        const body = document.querySelector('body');
+        // btn.forEach(element => {
+        //     element.addEventListener('click',(e)=>{
+        //         if(e.target.id=='default'){
+        //             body.style.backgroundColor='white';                
+        //         }else{
+        //             body.style.backgroundColor=e.target.id;
+        //         }
+        //     //   console.log(e.target.id);
+            
+
+        //  })
+        // });
+        const parent=document.querySelectorAll('.button')
+    //    const color=parent[0].innerText
+        // body.style.backgroundColor=parent[0].innerText
+        btn.forEach(element=>{
+            element.addEventListener('click',()=>{
+                // console.log(element.innerText)
+                body.style.backgroundColor=element.innerHTML
+                if(element.innerText=='default')
+                     body.style.backgroundColor='white';
+                else
+                     body.style.backgroundColor=element.innerHTML;
+
+            })
+        })
+      
+        // console.log(parent.)
+        
+
+
+    </script>
+</body>
+</html>

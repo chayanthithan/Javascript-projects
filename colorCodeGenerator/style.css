@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top:25%;
+}
+.change-color{
+    padding: 11px;
+    background-color: rgb(6, 221, 121);
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+    margin: 0;
+}
+.content{
+    display: flex;
+    padding: 0px 20px 0px 10px;
+}
+.colorName{
+    padding: 10px;
+    border: 1px solid rgb(26, 236, 138);
+    border-radius: 0px 10px 10px 0px;
+    margin-left:-4px;
+    color: white;
+    background-color: black;
+}

@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top:20px;
+}
+.sub-div{
+    
+    text-align: center;
+}
+.heading{
+    text-align: center;
+    padding: 20px;
+    color: rgba(rgb(212, 85, 85), rgb(20, 219, 153), rgb(20, 20, 172), alpha);
+}
+button{
+    border: none;
+    padding: 10px;
+    border-radius: 20px 10px;
+    cursor: pointer;
+}
+#yellow{
+color: yellow;
+}
+#green{
+    color: green;
+}
+#blue{
+    color: blue;
+}
+#red{
+    color: red;
+}
+#orange{
+    color: orange;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColorCodeGenerator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-div">
+        <div class="content">
+            <button class="change-color">Generate</button>
+            <p class="colorName">--------</p>
+        </div>
+    </div>
+
+
+
+    <!-- script -->
+    <script>
+      const trigger=document.querySelector('.change-color')
+      const body=document.querySelector('body')
+        console.log(trigger)
+        
+        trigger.addEventListener('click',()=>{
+            let codeDigit='#';
+          for(let i=0;i<6;i++){
+            const x=Math.floor(Math.random()*15)
+             
+             if(x==10){
+                codeDigit+='A'
+             }else if(x==11){
+                codeDigit+='B'
+             }else if(x==12){
+                codeDigit+='C'
+             }
+             else if(x==13){
+                codeDigit+='D'
+             }
+             else if(x==14){
+                codeDigit+='E'
+
+             }else if(x==15){
+                codeDigit+='F'
+             }else{
+                codeDigit+=x;
+             }
+             
+          }
+        //   console.log(codeDigit)
+          const textInput=document.querySelector('.colorName')
+          console.log(textInput.innerHTML=codeDigit)
+        body.style.backgroundColor=codeDigit
+        })
+    </script>
+
+</body>
+</html>
